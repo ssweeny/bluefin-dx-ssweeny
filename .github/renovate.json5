@@ -9,13 +9,12 @@
   "packageRules": [
     {
       "automerge": true,
-      "matchUpdateTypes": ["digest", "pin", "pinDigest"]
+      "matchUpdateTypes": ["pin", "pinDigest"]
     },
     {
-      "enabled": false,
-      "matchUpdateTypes": ["digest", "pinDigest", "pin"],
-      "matchDepTypes": ["container"],
-      "matchFileNames": [".github/workflows/**.yaml", ".github/workflows/**.yml"],
-    },
+      "automerge": true,
+      "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["digest"]
+    }
   ]
 }
