@@ -15,6 +15,11 @@
       "automerge": true,
       "matchManagers": ["dockerfile"],
       "matchUpdateTypes": ["digest"]
+    },
+    {
+      "automerge": true,
+      "matchUpdateTypes": ["digest"],
+      "matchDepNames": ["ghcr.io/ublue-os/bluefin-dx"],
     }
   ]
 }
