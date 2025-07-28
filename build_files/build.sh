@@ -14,10 +14,15 @@ dnf5 -y install \
     gnome-shell-extension-pop-shell \
     gnome-shell-extension-pop-shell-shortcut-overrides
 
+# Install COSMIC desktop as well because why not
+dnf5 -y install @cosmic-desktop
+
 # Install system76-firmware
 dnf5 -y copr enable szydell/system76
 dnf5 -y install \
     system76-firmware
 dnf5 -y copr disable szydell/system76
+
+dnf5 clean all
 
 systemctl enable system76-firmware-daemon
