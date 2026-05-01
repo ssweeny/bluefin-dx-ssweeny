@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bluefin-dx:stable@sha256:5dabdb773af5b7b36de9f94be04c72e8ff18b1653eab55c2cdbe33d5c24ee28f
+FROM ghcr.io/ublue-os/bluefin-dx:stable@sha256:49bafb2ebc8ab3f7e159cd741151910fa89fce5bf5cae4c0f0c1c78b7f0f37a3
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
